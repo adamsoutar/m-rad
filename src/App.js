@@ -1,12 +1,7 @@
 import React, { useState } from 'react'
 import ChanceCalculator from './Components/ChanceCalculator'
 import MaterialButton from './Components/MaterialButton'
-
-function mappable (num) {
-  let x = []
-  for (let i = 0; i < num; i++) x.push(i)
-  return x
-}
+import mappable from './Lib/Mappable'
 
 const chanceRenderers = [
   {
@@ -35,13 +30,16 @@ const App = props => {
           <ChanceCalculator renderer={renderer} key={x}></ChanceCalculator>
         ))
       }
+      {/* Material button scroll padder */}
+      <div style={{ height: 170 }}></div>
+
       <MaterialButton
-        style={{bottom: 50, left: 50}}
+        left
         onClick={() => setRenderIndex(
           renderIndex === chanceRenderers.length - 1 ? 0 : renderIndex + 1
         )}>{renderer.symbol}</MaterialButton>
       <MaterialButton
-        style={{bottom: 50, right: 50}}
+        right
         onClick={() => setCalculators(calculators + 1)}>+</MaterialButton>
     </div>
   )
