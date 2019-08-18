@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# M-RAD
 
-## Available Scripts
+React web app for calculating the chances of die rolls in tapletop games
 
-In the project directory, you can run:
+Mobile responsive.
 
-### `npm start`
+<img src="./screenshot.png" width=300 />
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Use it now
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+http://overflo.me/mrad
 
-### `npm test`
+## Why?
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Is it better to roll 5 dice hitting on a 6, or 4 dice hitting on a 5?
 
-### `npm run build`
+In either situation, what is the chance of at least one hit and, therefore,
+which unit should you send in?
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you attempt to calculate probability maths for more than one die, you have
+to involve factorials and binomial distribution mathematics, it gets surprisingly
+complicated.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+There will be a link to a blog post about this soon.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Use the 3 number inputs to set the parameters of the die roll, and the
+probability is automatically calculated. Use the "%" button in the
+bottom right to switch to different visualisation types, eg. 1 / 2 or 0.5.
+Use the "+" button to add new die sets for comparison. Hit the down arrow
+to view stats for different hit counts like the chance of at least 3 hits
+for that situation.
