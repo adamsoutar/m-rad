@@ -99,6 +99,7 @@ const ChanceCalculator = props => {
             type='number'
             onInput={(e) => setDice(e.target.value)}
             min={0}
+            max={600}
             defaultValue={1} />
         </Titled>
         <Titled left title='Sides'>
