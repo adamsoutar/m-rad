@@ -21,7 +21,7 @@ If you attempt to calculate probability maths for more than one die, you have
 to involve factorials and binomial distribution mathematics, it gets surprisingly
 complicated.
 
-There will be a link to a blog post about this soon.
+I have an overview of the maths for this [in this blog post](http://overflo.me/posts/mrad.md.html)
 
 ## Usage
 
